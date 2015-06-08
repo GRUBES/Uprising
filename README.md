@@ -1,4 +1,4 @@
-# ALiVE + CAF | Uprising
+# ALiVE | Uprising
 
 Uprising is a multiplayer mission built for ARMA 3 using the [CBA](http://www.armaholic.com/page.php?id=18767),
 [ALiVE](http://alivemod.com/), and [CAF Aggressors](http://forums.bistudio.com/showthread.php?172069-Arma3-AGGRESSORS)
