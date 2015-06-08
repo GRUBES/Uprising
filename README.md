@@ -1,4 +1,4 @@
-# Uprising
+# ALiVE + CAF | Uprising
 
 Uprising is a multiplayer mission built for ARMA 3 using the [CBA](http://www.armaholic.com/page.php?id=18767),
 [ALiVE](http://alivemod.com/), and [CAF Aggressors](http://forums.bistudio.com/showthread.php?172069-Arma3-AGGRESSORS)
@@ -24,7 +24,7 @@ stability to Stratis.
 With this licence you are free to adapt (i.e. modify, rework or update) and share (i.e. copy, distribute or transmit)
 the material under the following conditions:
 
-* Attribution - You must attribute the material in the manner specified by the author or licensor (but not in any way
+* Attribution - You must attribute the original author (GRUBES) in your mission descriptions (but not in any way
     that suggests that they endorse you or your use of the material).
 * Noncommercial - You may not use this material for any commercial purposes.
 * Arma Only - You may not convert or adapt this material to be used in other games than Arma.
