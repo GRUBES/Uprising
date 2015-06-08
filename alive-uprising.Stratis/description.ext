@@ -28,7 +28,7 @@ onLoadName = "ALiVE | Uprising";
 overviewPicture = "images\uprising.paa";
 
 // Description of the mission displayed during Mission Selection
-overviewText = "Several months ago, an extremely well-equipped militia invaded the Mediterranean island of Stratis. Woefully unprepared for any military action, the island was minimally protected. The militia quickly overran all military installations and entrenched themselves; they have held a tight grip on the resources and the entire population of Stratis since.<br/><br/>In the weeks since the assault, a small but well-trained group of resistance fighters have been working to oust the invaders?—?organizing a militia of their own, recruiting the Stratis population to their cause, and sabotaging the militia at every opportunity.<br/><br/>As tensions on the nearby island of Altis have escalated in recent months, NATO military forces have also taken a strategic interest in the tiny island of Stratis; should a large-scale war break out on Altis, Stratis would quickly become a crucial strategic location to hold. NATO has dispatched a small contingent of troops to assist in restoring stability to Stratis.";
+overviewText = "Several months ago, an extremely well-equipped militia invaded the Mediterranean island of Stratis. Woefully unprepared for any military action, the island was minimally protected. The militia quickly overran all military installations and entrenched themselves; they have held a tight grip on the resources and the entire population of Stratis since.<br/><br/>In the weeks since the assault, a small but well-trained group of resistance fighters have been working to oust the invaders: organizing a militia of their own, recruiting the Stratis population to their cause, and sabotaging the militia at every opportunity.<br/><br/>As tensions on the nearby island of Altis have escalated in recent months, NATO military forces have also taken a strategic interest in the tiny island of Stratis; should a large-scale war break out on Altis, Stratis would quickly become a crucial strategic location to hold. NATO has dispatched a small contingent of troops to assist in restoring stability to Stratis.";
 
 // Game Type settings
 class Header {
@@ -93,11 +93,58 @@ respawnDialog = 0;
 respawnOnStart = 0;
 
 // Respawn templates for things like custom camera modes
-respawnTemplates[] = {"Counter","Wave","Spectator"};
+respawnTemplates[] = {"Revive","Counter","Wave","Spectator"};
+
+/* Basic Revive settings */
+
+// Time it takes (in seconds) to revive a unit
+reviveDelay = 20;
+
+// Time it takes (in seconds) for an incapacitated unit to force respawn
+reviveForceRespawnDelay = 30;
+
+// Time it takes (in seconds) for a unit to bleed out
+reviveBleedOutDelay = 180;
 
 /* AI settings */
 
 // Enables or disables AI for playable units
 // 1 = AI will control playable units,
 // 0 = playable units will not spawn until a player joins in that slot
-disabledAI = 1;
+disabledAI = 0;
+
+// Disable scorelist for AI
+aiKills = 0;
+
+// Enable debug console
+// 0 - Available only in editor
+// 1 - Available in SP and for hosts / admins
+// 2 - Available for everyone
+enableDebugConsole = 1;
+
+// Disable manual team switch
+enableTeamSwitch = 0;
+
+// Disable group indicators
+showGroupIndicator = 0;
+
+/* Custom Functions */
+class CfgFunctions
+{
+	// All functions built from default path which is
+	// missionRoot/functions/categoryName/functionName
+	class UPR
+	{
+		class arsenal
+		{
+			class arsenalInit {
+				preInit = 0;
+				postInit = 0;
+				preStart = 0;
+				recompile = 0;
+				ext = ".sqf";
+				headerType = -1;
+			};
+		};
+	};
+};
