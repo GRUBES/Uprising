@@ -34,7 +34,7 @@ overviewText = "Several months ago, an extremely well-equipped militia invaded t
 class Header {
 	gameType = CTI;
 	minPlayers = 1;
-	maxPlayers = 60;
+	maxPlayers = 42;
 };
 
 
@@ -95,6 +95,7 @@ respawnOnStart = 0;
 // Respawn templates for things like custom camera modes
 respawnTemplates[] = {"Revive","Counter","Wave","Spectator"};
 
+
 /* Basic Revive settings */
 
 // Time it takes (in seconds) to revive a unit
@@ -105,6 +106,7 @@ reviveForceRespawnDelay = 30;
 
 // Time it takes (in seconds) for a unit to bleed out
 reviveBleedOutDelay = 180;
+
 
 /* AI settings */
 
@@ -127,6 +129,7 @@ enableTeamSwitch = 0;
 
 // Disable group indicators
 showGroupIndicator = 0;
+
 
 /* Custom Functions */
 class CfgFunctions
