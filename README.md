@@ -32,3 +32,7 @@ the material under the following conditions:
     same license.
 
 For full details, see https://www.bistudio.com/community/licenses/arma-public-license-share-alike
+
+## Credits
+* Briefings mechanism from [F3](https://github.com/ferstaberinde/F3)
+* The Black Sh33p, for giving me my first home in ARMA.
